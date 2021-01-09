@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../img/icono.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Tools for Grant</title>
+    <style>
+        .img1 {
+            width: 100%;
+            border-radius: 15px;
+            /*box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);*/
+        }
+
+        .inverse {
+            flex-direction: row-reverse;
+        }
+
+        .colorpri {
+            /* background-color: #E7C16F; */
+            /* color: #2E3B2C; */
+            background-image: url('https://highwaymagazine.files.wordpress.com/2014/10/periodismo-social-connection.jpg');
+            background-position: inherit;
+            background-attachment: fixed;
+            color: rgb(65, 65, 65);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .layer {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.932);
+            height: 100%;
+            z-index: 300;
+        }
+
+        .render {
+            border-radius: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+            zoom: 70%;
+            margin-top: 80px;
+        }
+
+        .conbuttoncopy {
+            position: absolute;
+            margin-top: 70px;
+            margin-left: 20px;
+        }
+
+
+        @media (max-width: 992px) {
+            .inverse {
+                flex-direction: row;
+            }
+
+            h3 {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--inicio Encabezado-->
+    <header class="colorpri">
+        <div class="layer text-center">
+            <h1 style="font-size: 60px; margin-bottom: -5px; padding-top: 50px; padding-bottom: 50px;">Layout</h1>
+        </div>
+    </header>
+    <!--final Encabezado-->
+
+    <h1 class="text-center" style="margin-top: 100px; font-size: 35px; opacity: 0.8; font-style: italic;">Block Layout
+    </h1>
+    <div class="container"
+        style="text-align: center; opacity: 0.6; margin-top: 20px; margin-bottom: 30px; font-style: italic;">
+        <p>Click en el boton y pegue el layout en su post().html</p>
+    </div>
+    <div class="butonbox" style="margin: 0px auto; width: 400px; margin-bottom: 50px;">
+        <button onclick="blayout()" class="btn"
+            style="width: 100%; font-size: 18px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">
+            Layout post
+        </button>
+
+    </div>
+
+    <br><br>
+
+    <!--inicio Encabezado-->
+    <header class="colorpri">
+        <div class="layer text-center">
+            <h1 style="font-size: 40px; margin-bottom: -5px; padding-top: 30px; padding-bottom: 30px;">Blocks</h1>
+        </div>
+    </header>
+    <!--final Encabezado-->
+    <br><br>
+    <div class="container"
+        style="text-align: center; opacity: 0.6; margin-top: 20px; margin-bottom: 30px; font-style: italic;">
+        <p>Click en boton copiar y luego pegar en su ide.</p>
+    </div>
+
+    <div class="separador" style="width: 10%; opacity: 0.2; height: 1px; margin: 0px auto; background: black "></div>
+
+    <br><br>
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Título
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b11()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section>
+                <div class="container">
+                    <div class="row mt-0   d-flex justify-content-center align-items-center text-center">
+                        <div class="col-12 col-md-9 text-center">
+                            <h2 class="mt-5 pt-3 mb-3 font-italic" style="font-size: 40px; font-weight: 400;">Lorem
+                                ipsum dolor</h2>
+                            <h4 class="display-5 font-italic" style="opacity: 0.8; padding-bottom: 50px;">Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit.</h4>
+                            <div class="separator"
+                                style="width: 30%; opacity: 0.1; height: 1px; margin: 0px auto; background: black ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Párrafo
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b6()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="mt-5 mb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <p style="opacity: 0.7; font-weight: 400; line-height: 30px;">Lorem Ipsum is simply dummy
+                                text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                                release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. The
+                                standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                                interested.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Imagen grande
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b8()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="mt-5 mb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <img alt="image" class="rounded"
+                                src="https://st.depositphotos.com/1004221/1384/i/600/depositphotos_13846233-stock-photo-boardwalk-in-the-park.jpg"
+                                style="width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Imagen pequeña
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b18()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section>
+                <div style="width: 50%; margin: 0px auto; margin-top: 50px; margin-bottom: 50px;">
+                    <img alt="image" class="rounded"
+                        src="https://st.depositphotos.com/1004221/1384/i/600/depositphotos_13846233-stock-photo-boardwalk-in-the-park.jpg"
+                        style="width: 100%;">
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Imagen y párrafo
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b9()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="mt-5 mb-5">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="contimg">
+                                <img src="https://st.depositphotos.com/1004221/1384/i/600/depositphotos_13846233-stock-photo-boardwalk-in-the-park.jpg"
+                                    alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <p class="text-h3 mt-3" style="opacity: 0.7; font-weight: 400; line-height: 30px;">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolor dolorem
+                                dignissimos cupiditate, quasi ipsa quas non vel ut, dolore laborum iusto natus animi
+                                quia consectetur tenetur? Provident, laborum odio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Párrafo e imagen
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b10()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="mt-5 mb-5">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+
+                        <div class="col-lg-6 col-sm-12">
+                            <p class="text-h3 mt-3" style="opacity: 0.7; font-weight: 400; line-height: 30px;">Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Incidunt odit modi natus expedita
+                                reiciendis asperiores nam, nobis adipisci quas soluta deserunt doloribus inventore est
+                                perspiciatis fugit deleniti assumenda molestiae recusandae.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="contimg">
+                                <img src="https://st.depositphotos.com/1004221/1384/i/600/depositphotos_13846233-stock-photo-boardwalk-in-the-park.jpg"
+                                    alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <!--end block -->
+
+
+
+
+
+
+
+
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Encabezado con imagen
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b1()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="mt-5 mb-5">
+                <div class="container">
+                    <div class="pt-5 text-center pb-0">
+                        <div class="row justify-content-center d-flex">
+                            <div class="col-xs-12 col-md-12 align-self-center">
+                                <h1 class="display-4 text-center  mb-3 ">Lorem ipsum dolor</h1>
+                                <p class=" lead  text-center  mb-4  "
+                                    style="opacity: 0.7; font-weight: 400; line-height: 30px;"> sit amet consectetur
+                                    adipisicing elit. Distinctio veniam perspiciatis nemo, incidunt assumenda odit
+                                    possimus corporis recusandae accusantium perferendis dolorem numquam earum hic
+                                    expedita beatae architecto ut eveniet dolorum </p>
+                                <img src="https://st.depositphotos.com/1004221/1384/i/600/depositphotos_13846233-stock-photo-boardwalk-in-the-park.jpg"
+                                    alt="" class="rounded img-fluid mt-5 mb-0" style="margin:auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Video
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b2()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section>
+                <div class="container pb-5 pt-5">
+                    <div class="row align-items-center justify-content-between ">
+                        <div class="col-12 col-md-7  mt-4 mt-md-0">
+                            <div class="embed-responsive embed-responsive-16by9 shadow-lg rounded overflow-hidden">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dpmAY059TTY"
+                                    allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 offset-md-1   ">
+                            <h1 class="mb-3  display-4 font-weight-bold">Lorem impsupls</h1>
+                            <p class="lead  ">Lorem ipsum dolor sit amet consectetur adipisicing elitolorum voluptas
+                                similique quis natus.</p>
+                            <div class="  d-flex mt-3 mb-1">
+                                <a class="btn btn-lg  mt-md-3 "
+                                    style="font-size: 18px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);"
+                                    href="https://www.youtube.com/watch?v=dpmAY059TTY&list=PL3485902CC4FB6C67&index=34"
+                                    role="button">Look the play list</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Lista enumerada
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b3()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="mt-5 mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-sm-12">
+                            <img src="https://st.depositphotos.com/1004221/1384/i/600/depositphotos_13846233-stock-photo-boardwalk-in-the-park.jpg"
+                                alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="col-lg-5 col-sm-12">
+                            <h1 class="mb-2 display-4">Lorem ipsum </h1>
+                            <p class="lead">Lorem ipsum dolor sit elit:</p>
+                            <ol class="list-features lead list-l">
+                                <li>lorem impsum</li>
+                                <li>lorem impsum</li>
+                                <li>lorem impsum</li>
+                                <li>lorem impsum</li>
+                                <li>lorem impsum</li>
+                                <li>lorem impsum</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Lista
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b4()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="mt-5 mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-sm-12">
+                            <h1 class="mb-2 display-4">Lorem impsum</h1>
+                            <p class="lead">Lorem ipsum dolor sit elit:</p>
+                            <ul class="list-features">
+                                <li>lorem impsum</li>
+                                <li>lorem impsum</li>
+                                <li>lorem impsum</li>
+                                <li>lorem impsum</li>
+                                <li>lorem impsum</li>
+                                <li>lorem impsum</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5 col-sm-12">
+                            <img src="https://st.depositphotos.com/1004221/1384/i/600/depositphotos_13846233-stock-photo-boardwalk-in-the-park.jpg"
+                                alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            3 columnas
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b5()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row text-left equal d-flex justyfy-content-between">
+                        <div class="col-12 col-md-3 pr-md-0 h-100 align-self-center ">
+                            <h5>Your Website</h5>
+                            <p class="text-h3">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+                            </p>
+                        </div>
+                        <div
+                            class="col-12 col-md-1 d-none p-0 h-100 d-md-flex align-self-center justify-content-center">
+                            <div class="h-100 w-25 border-right border-dark mr-2" style="min-height:70px; width:1px">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 pt-4 pt-md-0  h-100">
+
+                            <p class="text-h3">Richard McClintock, a Latin professor at Hampden-Sydney College in
+                                Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+                                passage, and going through the cites of the word in classical literature, discovered the
+                                undoubtable source. Lorem Ipsum passages, and more recently with desktop publishing
+                                software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+
+                        </div>
+
+                        <div class="col-12 col-md-4 pt-5 pt-lg-0  ">
+                            <p class="text-h3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+                                looked up one of the more obscure Latin words. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Lista enumerada extensa
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b16()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="mt-5 mb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <p style="opacity: 0.7; font-weight: 400; line-height: 30px;">
+                                <b> 1. Lorem ipsum dolor sit </b> <br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore earum, eveniet ipsum
+                                dolore nam ipsam quibusdam obcaecati, iusto similique veritatis reprehenderit voluptas
+                                doloribus dignissimos odio. Mollitia amet eveniet illum at. <br><br>
+                                <b>2. Lorem ipsum dolor sit </b> <br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore earum, eveniet ipsum
+                                dolore nam ipsam quibusdam obcaecati, iusto similique veritatis reprehenderit voluptas
+                                doloribus dignissimos odio. Mollitia amet eveniet illum at. <br><br>
+                                <b>3. Lorem ipsum dolor sit </b> <br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore earum, eveniet ipsum
+                                dolore nam ipsam quibusdam obcaecati, iusto similique veritatis reprehenderit voluptas
+                                doloribus dignissimos odio. Mollitia amet eveniet illum at. <br><br>
+                                <b>4. Lorem ipsum dolor sit </b> <br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore earum, eveniet ipsum
+                                dolore nam ipsam quibusdam obcaecati, iusto similique veritatis reprehenderit voluptas
+                                doloribus dignissimos odio. Mollitia amet eveniet illum at. <br><br>
+                                <b>5. Lorem ipsum dolor sit </b> <br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore earum, eveniet ipsum
+                                dolore nam ipsam quibusdam obcaecati, iusto similique veritatis reprehenderit voluptas
+                                doloribus dignissimos odio. Mollitia amet eveniet illum at. <br><br>
+                                <b>6. Lorem ipsum dolor sit </b> <br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore earum, eveniet ipsum
+                                dolore nam ipsam quibusdam obcaecati, iusto similique veritatis reprehenderit voluptas
+                                doloribus dignissimos odio. Mollitia amet eveniet illum at.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Texto en nube
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b17()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="mt-5 mb-5 pt-3" style="background-color: rgb(99, 189, 169);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <p style="opacity: 1; font-weight: 600; line-height: 30px; font-style: italic;">
+                                Recuerde que en un proyecto de grado todo debe ser coherente, principalmente se debe
+                                prestar atención al título, objetivos, pregunta de investigación, metodología,
+                                resultados y conclusiones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+    <!--Final de la seccion de bloques-->
+
+    <h1 class="text-center" style="margin-top: 100px; font-size: 35px; opacity: 0.8; font-style: italic;">Elementos del estilo global</h1>
+    <div class="container"
+        style="text-align: center; opacity: 0.6; margin-top: 20px; margin-bottom: 30px; font-style: italic;">
+        <p>Click in buttom copy and paste in your IDE.</p>
+    </div>
+
+    <div class="separador" style="width: 20%; opacity: 0.2; height: 1px; margin: 0px auto; background: black "></div>
+
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Separador
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b14()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section class="pt-5 pb-5">
+                <div class="separator"
+                    style="width: 30%; opacity: 0.1; height: 1px; margin: 0px auto; background: black "></div>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+
+    <!--start block -->
+    <div class="container">
+        <h3 class="text-center mt-5" style="opacity: 0.8; font-weight: 400; ">
+            Encabezado inicial o final
+        </h3>
+
+        <div class="conbuttoncopy">
+            <button onclick="b15()" class="btn"
+                style="font-size: 12px; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">Copy</button>
+        </div>
+
+        <div class="render">
+            <section>
+                <h1 class="text-center" style="margin-top: 100px; font-size: 35px; opacity: 0.8; font-style: italic;">
+                    Lorem ipsum dolor sit amet </h1>
+                <div class="container"
+                    style="text-align: center; opacity: 0.6; margin-top: 20px; margin-bottom: 30px; font-style: italic;">
+                    <p>consectetur adipisicing elit. Quam suscipit ea officia debitis sit architecto a qui dicta
+                        pariatur iusto quasi.</p>
+                </div>
+                <div class="separador"
+                    style="width: 20%; opacity: 0.2; height: 1px; margin: 0px auto; background: black "></div>
+                <br><br>
+            </section>
+        </div>
+    </div>
+    <!--end block -->
+
+
+
+    <br><br>
+
+    <section>
+        <div class="container"
+            style="text-align: center; opacity: 0.6; margin-top: 20px; margin-bottom: 30px; font-style: italic;">
+            <p>Quien no mejora su flujo de trabajo, jamás podrá mejorar sus resultados.</p>
+        </div>
+        <div class="separador" style="width: 20%; opacity: 0.2; height: 1px; margin: 0px auto; background: black ">
+        </div>
+        <br><br>
+    </section>
+
+
+    <script src="js/blocks.js">
+
+    </script>
+
+</html>
